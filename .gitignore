@@ -1,0 +1,87 @@
+# Visual Studio build files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ipch
+*.opensdf
+*.ncb
+*.sdf
+*.dbmdl
+*.opendb
+*.vcxproj.user
+*.projdata
+*.csproj.user
+*.rsuser
+*.sln.dotsettings
+*.ide
+    
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.tlog
+*.lastbuildstate
+*.builds
+*.pidb
+*.svclog
+*.scc
+
+# Roslyn cache
+*.compilerconfig
+*.compilerconfig.json
+*.buildinfo
+*.nuget.dgspec.json
+*.nuget.packages.lock.json
+
+# Crash and automatic save
+*.pdb
+*.cache
+*.dmp
+*.tmp
+*.temp
+
+# Other Visual Studio files
+*.csproj.orig
+*.psess
+*.vsp
+*.vspx
+*.log
+
+# NuGet packages
+*.nupkg
+*.nuspec
+/packages/
+/*.nupkg
+
+# Windows image file caches
+*.pfx
+*.publishsettings
+*.key
+*.cer
+*.snk
+
+# User-specific files
+*.rsuser
+*.userprefs
+*.userosscache
+
+# Node.js cache
+node_modules/
+
+# Web workspaces
+.ionide/
+
+# Rider project files
+.idea/
+.idea.*
+*.sln.iml
+
+# JetBrains Rider
+.idea/
+
+# Yarn PnP
+.pnp.*
+
+# End of `.gitignore`
