@@ -1,0 +1,30 @@
+#version 330 core
+
+in vec2 TextCoord;
+in vec4 ColorAmbDiff;
+in float UseTexture;
+
+uniform sampler2D texture_diffuse0;
+uniform sampler2D texture_diffuse1;
+uniform sampler2D texture_diffuse2;
+uniform sampler2D texture_specular0;
+uniform sampler2D texture_specular1;
+uniform sampler2D texture_specular2;
+
+
+out vec4 FragColor;
+
+
+
+
+void main()
+{
+    if(UseTexture == 0)
+        FragColor = ColorAmbDiff;
+    else
+        FragColor = texture(texture_diffuse0, TextCoord);
+}
+
+
+
+

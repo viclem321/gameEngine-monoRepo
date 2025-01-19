@@ -1,0 +1,32 @@
+#version 330 core
+
+layout (location = 0) in vec3 aPos;
+layout (location = 2) in vec2 aTextCoord;
+layout (location = 7) in vec4 aColorDiffAmb;
+layout (location = 10) in float aUseTexture;
+layout (location = 11) in vec3 modelInstance;
+
+
+layout (std140) uniform Matrice
+{
+    mat4 view;
+    mat4 projection;
+};
+
+
+
+out vec2 TextCoord;
+out vec4 ColorAmbDiff;
+out float UseTexture;
+
+
+
+
+void main()
+{
+	gl_Position = projection * view * vec4(aPos + modelInstance, 1.0f);
+        TextCoord = aTextCoord;
+        ColorAmbDiff = aColorDiffAmb;
+        UseTexture = aUseTexture;
+
+}
